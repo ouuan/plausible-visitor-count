@@ -17,3 +17,5 @@ Configs are via environment variables.
 `PLAUSIBLE_SITE_ID`: required
 
 `PLAUSIBLE_API_TOKEN`: required
+
+`LISTEN_HOST`: optional, default is `0.0.0.0`

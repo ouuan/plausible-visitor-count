@@ -39,5 +39,5 @@ server.get<{Params: Static<typeof GetVisitorSchema>}>('/api/visitors/:path', {
 
 server.listen({
   port: 3000,
-  host: '0.0.0.0',
+  host: process.env.LISTEN_HOST || '0.0.0.0',
 });
