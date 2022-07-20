@@ -17,7 +17,7 @@ server.get<{Params: Static<typeof GetVisitorSchema>}>('/api/visitors/:path', {
     reply.header('Access-Control-Allow-Origin', '*');
     const { path } = request.params;
     const response: any = await got.get(new URL(
-      `/api/v1/stats/aggregate?site_id=${process.env.PLAUSIBLE_SITE_ID}&metrics=visitors&period=custom&date=2019-01-01,${new Date().toISOString().slice(0, 10)}&filters=event:page${encodeURIComponent(`==/${path}`)}`,
+      `/api/v1/stats/aggregate?site_id=${process.env.PLAUSIBLE_SITE_ID}&metrics=visitors&period=custom&date=2019-01-01,${new Date().toISOString().slice(0, 10)}&filters=event:page%3D%3D%2F${path}`,
       process.env.PLAUSIBLE_URL || 'https://plausible.io',
     ), {
       headers: {
