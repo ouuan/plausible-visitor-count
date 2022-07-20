@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  app:
+  plausible-visitor-count:
     image: ouuan/plausible-visitor-count
     restart: always
     ports:
@@ -10,3 +10,4 @@ services:
       PLAUSIBLE_URL: https://plausible.io
       PLAUSIBLE_SITE_ID: example.com
       PLAUSIBLE_API_KEY: generate an API key on Plausible
+      LISTEN_HOST: plausible-visitor-count
