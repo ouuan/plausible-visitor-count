@@ -1,4 +1,4 @@
-import Fastify from 'fastify';
+import Fastify, { FastifyReply } from 'fastify';
 import got from 'got';
 import { Static, Type } from '@sinclair/typebox';
 
@@ -12,16 +12,11 @@ server.get('/', (_, reply) => reply
   .header('cache-control', 'public, max-age=86400')
   .send('https://github.com/ouuan/plausible-visitor-count'));
 
-server.get<{Params: Static<typeof GetVisitorSchema>}>('/api/visitors/:path', {
-  schema: {
-    params: GetVisitorSchema,
-  },
-}, async (request, reply) => {
+async function handleRequest(reply: FastifyReply, path?: string) {
   try {
     reply.header('Access-Control-Allow-Origin', '*');
-    const { path } = request.params;
     const response: any = await got.get(new URL(
-      `/api/v1/stats/aggregate?site_id=${process.env.PLAUSIBLE_SITE_ID}&metrics=visitors&period=custom&date=2019-01-01,${new Date().toISOString().slice(0, 10)}&filters=event:page%3D%3D%2F${path}`,
+      `/api/v1/stats/aggregate?site_id=${process.env.PLAUSIBLE_SITE_ID}&metrics=visitors&period=custom&date=2019-01-01,${new Date().toISOString().slice(0, 10)}${path === undefined ? '' : `&filters=event:page%3D%3D%2F${path}`}`,
       process.env.PLAUSIBLE_URL || 'https://plausible.io',
     ), {
       headers: {
@@ -48,7 +43,18 @@ server.get<{Params: Static<typeof GetVisitorSchema>}>('/api/visitors/:path', {
       statusCode: 500,
     });
   }
+}
+
+server.get<{Params: Static<typeof GetVisitorSchema>}>('/api/visitors/:path', {
+  schema: {
+    params: GetVisitorSchema,
+  },
+}, async (request, reply) => {
+  const { path } = request.params;
+  return handleRequest(reply, path);
 });
+
+server.get('/api/visitors', async (_, reply) => handleRequest(reply));
 
 server.listen({
   port: 3000,

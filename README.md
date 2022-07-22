@@ -8,6 +8,8 @@ The site's timezone needs to be set as GMT+0.
 
 `GET /api/visitors/:path`: The `path` should be URI encoded. For example: `GET /api/visitors/example%2Fpage` to get the visitor count of `$PLAUSIBLE_SITE_ID/example/page`. It returns a JSON object `{ statusCode: 200, path: string, visitors: number }` or `{ statusCode: number, error: string, message: string }` with corresponding HTTP status code. The period is from 2019-01-01 to now, i.e. all stats.
 
+`GET /api/visitors`: To get the visitor count of the whole website. It returns a JSON object `{ statusCode: 200, visitors: number }` or `{ statusCode: number, error: string, message: string }` with corresponding HTTP status code. The period is from 2019-01-01 to now, i.e. all stats.
+
 ## Config
 
 Configs are via environment variables.
