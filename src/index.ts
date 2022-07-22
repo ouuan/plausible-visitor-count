@@ -8,7 +8,9 @@ const GetVisitorSchema = Type.Object({
 
 const server = Fastify();
 
-server.get('/', (_, reply) => reply.send('https://github.com/ouuan/plausible-visitor-count'));
+server.get('/', (_, reply) => reply
+  .header('cache-control', 'public, max-age=86400')
+  .send('https://github.com/ouuan/plausible-visitor-count'));
 
 server.get<{Params: Static<typeof GetVisitorSchema>}>('/api/visitors/:path', {
   schema: {
