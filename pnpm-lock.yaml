@@ -2,7 +2,9 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fastify/type-provider-typebox': ^2.4.0
+  '@ouuan/tsconfig-base': ^0.3.0
   '@sinclair/typebox': ^0.25.21
+  '@types/node': ^18.11.18
   '@typescript-eslint/eslint-plugin': ^5.49.0
   '@typescript-eslint/parser': ^5.49.0
   eslint: ^8.33.0
@@ -20,6 +22,8 @@ dependencies:
   got: 12.5.3
 
 devDependencies:
+  '@ouuan/tsconfig-base': 0.3.0
+  '@types/node': 18.11.18
   '@typescript-eslint/eslint-plugin': 5.49.0_rsaczafy73x3xqauzesvzbsgzy
   '@typescript-eslint/parser': 5.49.0_zkdaqh7it7uc4cvz2haft7rc6u
   eslint: 8.33.0
@@ -563,6 +567,12 @@ packages:
       fastq: 1.13.0
     dev: true
 
+  /@ouuan/tsconfig-base/0.3.0:
+    resolution: {integrity: sha512-SDOUUd766vPxoJfzYtWe+gs27u7bO9f7gD0ao0E7hURgQ6Kl69dmNdtzo9rMZizUV/mTO1ftifzuY7H0duryMA==}
+    dependencies:
+      '@tsconfig/node-lts-strictest-esm': 18.12.1
+    dev: true
+
   /@rollup/plugin-alias/4.0.2_rollup@3.12.0:
     resolution: {integrity: sha512-1hv7dBOZZwo3SEupxn4UA2N0EDThqSSS+wI1St1TNTBtOZvUchyIClyHcnDcjjrReTPZ47Faedrhblv4n+T5UQ==}
     engines: {node: '>=14.0.0'}
@@ -670,6 +680,10 @@ packages:
       defer-to-connect: 2.0.1
     dev: false
 
+  /@tsconfig/node-lts-strictest-esm/18.12.1:
+    resolution: {integrity: sha512-LvBLmaC6Q/txTddLc11OeMHF9XjJFzlilkETJuvBlUvHy9pPiMsoH3nxWZM1FMSO53zp4mJP6gzOzxKEq0me7Q==}
+    dev: true
+
   /@types/estree/1.0.0:
     resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
     dev: true
@@ -684,6 +698,10 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/node/18.11.18:
+    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
     dev: true
 
   /@types/resolve/1.20.2:
