@@ -31,7 +31,7 @@ async function handleRequest(reply: FastifyReply, path?: string) {
         statusCode: 502,
       });
     }
-    return reply.header('cache-control', 'public, max-age=60').send({
+    return reply.header('cache-control', 'public, max-age=300').send({
       statusCode: 200,
       path,
       visitors,
