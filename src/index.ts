@@ -38,7 +38,7 @@ async function handleRequest(reply: FastifyReply, path?: string) {
     });
   } catch (e) {
     // eslint-disable-next-line no-console
-    console.error(e);
+    console.error(new Date(), e);
     return reply.status(500).send({
       message: 'Error occurred when trying to fetch the stats',
       error: 'Internal Server Error',
