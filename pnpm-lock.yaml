@@ -10,15 +10,15 @@ specifiers:
   eslint: 8.35.0
   eslint-config-airbnb-base: 15.0.0
   eslint-plugin-import: 2.27.5
-  fastify: 4.13.0
+  fastify: 4.14.1
   got: 12.5.3
   typescript: 4.9.5
   unbuild: 1.1.2
 
 dependencies:
-  '@fastify/type-provider-typebox': 2.4.0_are3vuxc773jp5h6pm2ktifo6u
+  '@fastify/type-provider-typebox': 2.4.0_naatsb2dmwxq3j32xoqzjtyzqm
   '@sinclair/typebox': 0.25.24
-  fastify: 4.13.0
+  fastify: 4.14.1
   got: 12.5.3
 
 devDependencies:
@@ -461,8 +461,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fastify/ajv-compiler/3.4.0:
-    resolution: {integrity: sha512-69JnK7Cot+ktn7LD5TikP3b7psBPX55tYpQa8WSumt8r117PCa2zwHnImfBtRWYExreJlI48hr0WZaVrTBGj7w==}
+  /@fastify/ajv-compiler/3.5.0:
+    resolution: {integrity: sha512-ebbEtlI7dxXF5ziNdr05mOY8NnDiPB1XvAlLHctRt/Rc+C3LCOVW5imUVX+mhvUhnNzmPBHewUkOFgGlCxgdAA==}
     dependencies:
       ajv: 8.11.0
       ajv-formats: 2.1.1
@@ -483,14 +483,14 @@ packages:
       fast-json-stringify: 5.1.0
     dev: false
 
-  /@fastify/type-provider-typebox/2.4.0_are3vuxc773jp5h6pm2ktifo6u:
+  /@fastify/type-provider-typebox/2.4.0_naatsb2dmwxq3j32xoqzjtyzqm:
     resolution: {integrity: sha512-dP8KnpfyBD1FT1UxNWCRqSpKG69xYAK53q6MqUjuwYL7xvogXBbH/tpAMc1kZkKmgAHPT0migy9DaYtnkTbIIQ==}
     peerDependencies:
       '@sinclair/typebox': ^0.25.9
       fastify: ^4.0.0
     dependencies:
       '@sinclair/typebox': 0.25.24
-      fastify: 4.13.0
+      fastify: 4.14.1
     dev: false
 
   /@humanwhocodes/config-array/0.11.8:
@@ -1597,10 +1597,10 @@ packages:
     resolution: {integrity: sha512-qKRta6N7BWEFVlyonVY/V+BMLgFqktCUV0QjT259ekAIlbVrMaFnFLxJ4s/JPl4tou56S1BzPufI60bLe29fHA==}
     dev: false
 
-  /fastify/4.13.0:
-    resolution: {integrity: sha512-p9ibdFWH3pZ7KPgmfHPKGUy2W4EWU2TEpwlcu58w4CwGyU3ARFfh2kwq6zpZ5W2ZGVbufi4tZbqHIHAlX/9Z/A==}
+  /fastify/4.14.1:
+    resolution: {integrity: sha512-yjrDeXe77j9gRlSV2UJry8mcFWbD0NQ5JYjnPi4tkFjHZVaG3/BD5wxOmRzGnHPC0YvaBJ0XWrIfFPl2IHRa1w==}
     dependencies:
-      '@fastify/ajv-compiler': 3.4.0
+      '@fastify/ajv-compiler': 3.5.0
       '@fastify/error': 3.0.0
       '@fastify/fast-json-stringify-compiler': 4.1.0
       abstract-logging: 2.0.1
