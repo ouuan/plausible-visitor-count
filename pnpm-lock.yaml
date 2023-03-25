@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@fastify/type-provider-typebox': 2.4.0
   '@ouuan/tsconfig-base': 0.3.0
-  '@sinclair/typebox': 0.25.24
+  '@sinclair/typebox': 0.26.3
   '@types/node': 18.15.0
   '@typescript-eslint/eslint-plugin': 5.54.1
   '@typescript-eslint/parser': 5.54.1
@@ -16,8 +16,8 @@ specifiers:
   unbuild: 1.1.2
 
 dependencies:
-  '@fastify/type-provider-typebox': 2.4.0_naatsb2dmwxq3j32xoqzjtyzqm
-  '@sinclair/typebox': 0.25.24
+  '@fastify/type-provider-typebox': 2.4.0_hlqchjdoloodpnpdc3fbdqdani
+  '@sinclair/typebox': 0.26.3
   fastify: 4.14.1
   got: 12.6.0
 
@@ -498,13 +498,13 @@ packages:
       fast-json-stringify: 5.1.0
     dev: false
 
-  /@fastify/type-provider-typebox/2.4.0_naatsb2dmwxq3j32xoqzjtyzqm:
+  /@fastify/type-provider-typebox/2.4.0_hlqchjdoloodpnpdc3fbdqdani:
     resolution: {integrity: sha512-dP8KnpfyBD1FT1UxNWCRqSpKG69xYAK53q6MqUjuwYL7xvogXBbH/tpAMc1kZkKmgAHPT0migy9DaYtnkTbIIQ==}
     peerDependencies:
       '@sinclair/typebox': ^0.25.9
       fastify: ^4.0.0
     dependencies:
-      '@sinclair/typebox': 0.25.24
+      '@sinclair/typebox': 0.26.3
       fastify: 4.14.1
     dev: false
 
@@ -684,8 +684,8 @@ packages:
       rollup: 3.16.0
     dev: true
 
-  /@sinclair/typebox/0.25.24:
-    resolution: {integrity: sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ==}
+  /@sinclair/typebox/0.26.3:
+    resolution: {integrity: sha512-7ePab2ecv+Qsn2N9cKY31gQpXBd+jtQvT2lmknEbi4k0n5nwQQ43AOnhdy/TkECIO//fM+OdefPDc1eexeEN0A==}
     dev: false
 
   /@sindresorhus/is/5.3.0:
