@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@fastify/type-provider-typebox':
-    specifier: 2.4.0
-    version: 2.4.0(@sinclair/typebox@0.26.8)(fastify@4.15.0)
+    specifier: 3.0.0
+    version: 3.0.0(fastify@4.15.0)
   '@sinclair/typebox':
     specifier: 0.26.8
     version: 0.26.8
@@ -511,10 +511,9 @@ packages:
       fast-json-stringify: 5.1.0
     dev: false
 
-  /@fastify/type-provider-typebox@2.4.0(@sinclair/typebox@0.26.8)(fastify@4.15.0):
-    resolution: {integrity: sha512-dP8KnpfyBD1FT1UxNWCRqSpKG69xYAK53q6MqUjuwYL7xvogXBbH/tpAMc1kZkKmgAHPT0migy9DaYtnkTbIIQ==}
+  /@fastify/type-provider-typebox@3.0.0(fastify@4.15.0):
+    resolution: {integrity: sha512-VVYY/ZcPSFElLtRYboA2bmFxoINGDqmmqJ8Ch8+2lvmc+XFCsOJ714SEOpgshC4n52KBclgQxf2O80NeEAN7gQ==}
     peerDependencies:
-      '@sinclair/typebox': ^0.25.9
       fastify: ^4.0.0
     dependencies:
       '@sinclair/typebox': 0.26.8
