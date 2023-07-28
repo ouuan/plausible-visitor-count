@@ -12,18 +12,39 @@ server.get('/', (_, reply) => reply
   .header('cache-control', 'public, max-age=86400')
   .send('https://github.com/ouuan/plausible-visitor-count'));
 
-async function handleRequest(reply: FastifyReply, path?: string) {
+interface PageQuery {
+  type: 'page';
+  path: string;
+}
+
+interface SiteQuery {
+  type: 'site';
+}
+
+interface RealtimeQuery {
+  type: 'realtime';
+}
+
+type Query = PageQuery | SiteQuery | RealtimeQuery;
+
+async function handleRequest(reply: FastifyReply, query: Query) {
   try {
     reply.header('Access-Control-Allow-Origin', '*');
-    const response: any = await got.get(new URL(
-      `/api/v1/stats/aggregate?site_id=${process.env.PLAUSIBLE_SITE_ID}&metrics=visitors&period=custom&date=2019-01-01,${new Date().toISOString().slice(0, 10)}${path === undefined ? '' : `&filters=event:page%3D%3D%2F${path}`}`,
-      process.env.PLAUSIBLE_URL || 'https://plausible.io',
-    ), {
+    let apiPath;
+    if (query.type === 'realtime') {
+      apiPath = `/api/v1/stats/realtime/visitors?site_id=${process.env.PLAUSIBLE_SITE_ID}`;
+    } else {
+      apiPath = `/api/v1/stats/aggregate?site_id=${process.env.PLAUSIBLE_SITE_ID}&metrics=visitors&period=custom&date=2019-01-01,${new Date().toISOString().slice(0, 10)}`;
+      if (query.type === 'page') {
+        apiPath += `&filters=event:page%3D%3D%2F${query.path}`;
+      }
+    }
+    const response: any = await got.get(new URL(apiPath, process.env.PLAUSIBLE_URL || 'https://plausible.io'), {
       headers: {
         Authorization: `Bearer ${process.env.PLAUSIBLE_API_KEY}`,
       },
     }).json();
-    const visitors = response.results?.visitors?.value;
+    const visitors = query.type === 'realtime' ? response : response.results?.visitors?.value;
     if (!Number.isInteger(visitors)) {
       return reply.status(502).send({
         message: 'Invalid response from Plausible',
@@ -31,9 +52,14 @@ async function handleRequest(reply: FastifyReply, path?: string) {
         statusCode: 502,
       });
     }
-    return reply.header('cache-control', 'public, max-age=300').send({
+    if (query.type === 'realtime') {
+      reply.header('Cache-Control', 'public, must-revalidate, max-age=5');
+    } else {
+      reply.header('Cache-Control', 'public, max-age=300');
+    }
+    return reply.send({
       statusCode: 200,
-      path,
+      ...query,
       visitors,
     });
   } catch (e) {
@@ -53,10 +79,12 @@ server.get<{Params: Static<typeof GetVisitorSchema>}>('/api/visitors/:path', {
   },
 }, async (request, reply) => {
   const { path } = request.params;
-  return handleRequest(reply, path);
+  return handleRequest(reply, { type: 'page', path });
 });
 
-server.get('/api/visitors', async (_, reply) => handleRequest(reply));
+server.get('/api/visitors', async (_, reply) => handleRequest(reply, { type: 'site' }));
+
+server.get('/api/realtime', async (_, reply) => handleRequest(reply, { type: 'realtime' }));
 
 server.listen({
   port: 3000,

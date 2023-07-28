@@ -10,6 +10,8 @@ The site's timezone needs to be set as GMT+0.
 
 `GET /api/visitors`: To get the visitor count of the whole website. It returns a JSON object `{ statusCode: 200, visitors: number }` or `{ statusCode: number, error: string, message: string }` with corresponding HTTP status code. The period is from 2019-01-01 to now, i.e. all stats.
 
+`GET /api/realtime`: Same format, realtime.
+
 ## Config
 
 Configs are via environment variables.
