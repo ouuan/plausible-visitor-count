@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@fastify/type-provider-typebox':
-    specifier: 3.4.0
-    version: 3.4.0(@sinclair/typebox@0.31.4)
+    specifier: 3.5.0
+    version: 3.5.0(@sinclair/typebox@0.31.4)
   '@sinclair/typebox':
     specifier: 0.31.4
     version: 0.31.4
@@ -526,10 +526,10 @@ packages:
       fast-json-stringify: 5.7.0
     dev: false
 
-  /@fastify/type-provider-typebox@3.4.0(@sinclair/typebox@0.31.4):
-    resolution: {integrity: sha512-wy1ihi8WtH00sW4YlaA0lZ0nIz/mVVh4stQQ68AtNYTgXI9LPKWylNYDTP2lcXO9az9w902CvqRc8BBwOUTo7w==}
+  /@fastify/type-provider-typebox@3.5.0(@sinclair/typebox@0.31.4):
+    resolution: {integrity: sha512-f48uGzvLflE/y4pvXOS8qjAC+mZmlqev9CPHnB8NDsBSL4EbeydO61IgPuzOkeNlAYeRP9Y56UOKj1XWFibgMw==}
     peerDependencies:
-      '@sinclair/typebox': '>=0.26 <=0.30'
+      '@sinclair/typebox': '>=0.26 <=0.31'
     dependencies:
       '@sinclair/typebox': 0.31.4
     dev: false
