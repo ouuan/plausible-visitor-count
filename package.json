@@ -22,7 +22,7 @@
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.28.1",
     "typescript": "5.2.2",
-    "unbuild": "1.2.1"
+    "unbuild": "2.0.0"
   },
   "dependencies": {
     "@fastify/type-provider-typebox": "3.5.0",
