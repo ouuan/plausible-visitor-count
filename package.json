@@ -14,7 +14,7 @@
     "build": "unbuild"
   },
   "devDependencies": {
-    "@ouuan/tsconfig-base": "1.1.0",
+    "@ouuan/tsconfig-base": "1.1.1",
     "@types/node": "18.17.15",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
