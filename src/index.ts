@@ -1,6 +1,6 @@
-import Fastify, { FastifyReply } from 'fastify';
+import Fastify, { type FastifyReply } from 'fastify';
 import got from 'got';
-import { Static, Type } from '@sinclair/typebox';
+import { type Static, Type } from '@sinclair/typebox';
 
 const GetVisitorSchema = Type.Object({
   path: Type.String(),
