@@ -7,10 +7,10 @@ settings:
 dependencies:
   '@fastify/type-provider-typebox':
     specifier: 3.5.0
-    version: 3.5.0(@sinclair/typebox@0.31.23)
+    version: 3.5.0(@sinclair/typebox@0.31.28)
   '@sinclair/typebox':
-    specifier: 0.31.23
-    version: 0.31.23
+    specifier: 0.31.28
+    version: 0.31.28
   fastify:
     specifier: 4.24.3
     version: 4.24.3
@@ -719,12 +719,12 @@ packages:
       fast-json-stringify: 5.8.0
     dev: false
 
-  /@fastify/type-provider-typebox@3.5.0(@sinclair/typebox@0.31.23):
+  /@fastify/type-provider-typebox@3.5.0(@sinclair/typebox@0.31.28):
     resolution: {integrity: sha512-f48uGzvLflE/y4pvXOS8qjAC+mZmlqev9CPHnB8NDsBSL4EbeydO61IgPuzOkeNlAYeRP9Y56UOKj1XWFibgMw==}
     peerDependencies:
       '@sinclair/typebox': '>=0.26 <=0.31'
     dependencies:
-      '@sinclair/typebox': 0.31.23
+      '@sinclair/typebox': 0.31.28
     dev: false
 
   /@humanwhocodes/config-array@0.11.13:
@@ -909,8 +909,8 @@ packages:
       rollup: 3.28.1
     dev: true
 
-  /@sinclair/typebox@0.31.23:
-    resolution: {integrity: sha512-ZzrzE8yCrWWU4mcBstBgdlBMjB8My3ESY9nZ/v996GptIJb4+MU1p7s1Qxrc2xvZeOiDDnAheLLmdHjPgZV79g==}
+  /@sinclair/typebox@0.31.28:
+    resolution: {integrity: sha512-/s55Jujywdw/Jpan+vsy6JZs1z2ZTGxTmbZTPiuSL2wz9mfzA2gN1zzaqmvfi4pq+uOt7Du85fkiwv5ymW84aQ==}
     dev: false
 
   /@sindresorhus/is@5.3.0:
