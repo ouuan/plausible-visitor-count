@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@ouuan/tsconfig-base": "1.2.0",
-    "@types/node": "20.11.20",
+    "@types/node": "20.11.25",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
     "eslint": "8.57.0",
@@ -26,8 +26,8 @@
   },
   "dependencies": {
     "@fastify/type-provider-typebox": "4.0.0",
-    "@sinclair/typebox": "0.32.14",
-    "fastify": "4.26.1",
-    "got": "14.2.0"
+    "@sinclair/typebox": "0.32.15",
+    "fastify": "4.26.2",
+    "got": "14.2.1"
   }
 }
