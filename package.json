@@ -15,18 +15,18 @@
   },
   "devDependencies": {
     "@ouuan/tsconfig-base": "1.2.0",
-    "@types/node": "20.11.25",
+    "@types/node": "20.11.30",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
     "eslint": "8.57.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.29.1",
-    "typescript": "5.4.2",
+    "typescript": "5.4.3",
     "unbuild": "2.0.0"
   },
   "dependencies": {
     "@fastify/type-provider-typebox": "4.0.0",
-    "@sinclair/typebox": "0.32.15",
+    "@sinclair/typebox": "0.32.19",
     "fastify": "4.26.2",
     "got": "14.2.1"
   }
