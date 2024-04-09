@@ -34,7 +34,14 @@ async function handleRequest(reply: FastifyReply, query: Query) {
     } else {
       apiPath = `/api/v1/stats/aggregate?site_id=${process.env.PLAUSIBLE_SITE_ID}&metrics=visitors&period=custom&date=2019-01-01,${new Date().toISOString().slice(0, 10)}`;
       if (query.type === 'page') {
-        apiPath += `&filters=event:page%3D%3D%2F${query.path}`;
+        if (query.path.match(/[?&=|;*%]/)) {
+          return reply.status(400).send({
+            message: 'Invalid path',
+            error: 'Bad Request',
+            statusCode: 400,
+          });
+        }
+        apiPath += `&${new URLSearchParams({ filters: `event:page==/${query.path}` })}`;
       }
     }
     const response: any = await got.get(new URL(apiPath, process.env.PLAUSIBLE_URL || 'https://plausible.io'), {
