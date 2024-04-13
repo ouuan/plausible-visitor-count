@@ -21,7 +21,7 @@
     "eslint": "8.57.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.29.1",
-    "typescript": "5.4.4",
+    "typescript": "5.4.5",
     "unbuild": "2.0.0"
   },
   "dependencies": {
