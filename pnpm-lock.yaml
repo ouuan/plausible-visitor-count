@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@fastify/type-provider-typebox':
         specifier: 4.0.0
-        version: 4.0.0(@sinclair/typebox@0.32.22)
+        version: 4.0.0(@sinclair/typebox@0.32.25)
       '@sinclair/typebox':
-        specifier: 0.32.22
-        version: 0.32.22
+        specifier: 0.32.25
+        version: 0.32.25
       fastify:
         specifier: 4.26.2
         version: 4.26.2
@@ -598,8 +598,8 @@ packages:
       rollup:
         optional: true
 
-  '@sinclair/typebox@0.32.22':
-    resolution: {integrity: sha512-4uH8BLhNbptL2UkfS/a63tQ6uZGGZ4DT6zFq7ZkE+KQi7/56ZYkkWniAqz4bUr4cZGfoR83zRvSh39ZpH8DKDw==}
+  '@sinclair/typebox@0.32.25':
+    resolution: {integrity: sha512-Is/Phy0ZksiKfl1i8jh2Ez8YwX9ZzXjwrSvZQRc7wIQBrUvEjMBOdlIFiAOOhXJW1EvCsGtqvdT+UeB2D0qjMQ==}
 
   '@sindresorhus/is@6.1.0':
     resolution: {integrity: sha512-BuvU07zq3tQ/2SIgBsEuxKYDyDjC0n7Zir52bpHy2xnBbW81+po43aLFPLbeV3HRAheFbGud1qgcqSYfhtHMAg==}
@@ -2307,9 +2307,9 @@ snapshots:
     dependencies:
       fast-json-stringify: 5.8.0
 
-  '@fastify/type-provider-typebox@4.0.0(@sinclair/typebox@0.32.22)':
+  '@fastify/type-provider-typebox@4.0.0(@sinclair/typebox@0.32.25)':
     dependencies:
-      '@sinclair/typebox': 0.32.22
+      '@sinclair/typebox': 0.32.25
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
@@ -2427,7 +2427,7 @@ snapshots:
     optionalDependencies:
       rollup: 3.28.1
 
-  '@sinclair/typebox@0.32.22': {}
+  '@sinclair/typebox@0.32.25': {}
 
   '@sindresorhus/is@6.1.0': {}
 
