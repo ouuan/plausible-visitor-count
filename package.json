@@ -25,7 +25,7 @@
     "unbuild": "2.0.0"
   },
   "dependencies": {
-    "@fastify/type-provider-typebox": "4.0.0",
+    "@fastify/type-provider-typebox": "4.1.0",
     "@sinclair/typebox": "0.33.4",
     "fastify": "4.28.1",
     "got": "14.4.2"
