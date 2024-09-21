@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@fastify/type-provider-typebox':
         specifier: 4.1.0
-        version: 4.1.0(@sinclair/typebox@0.33.9)
+        version: 4.1.0(@sinclair/typebox@0.33.12)
       '@sinclair/typebox':
-        specifier: 0.33.9
-        version: 0.33.9
+        specifier: 0.33.12
+        version: 0.33.12
       fastify:
         specifier: 4.28.1
         version: 4.28.1
@@ -606,8 +606,8 @@ packages:
   '@sec-ant/readable-stream@0.4.1':
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
 
-  '@sinclair/typebox@0.33.9':
-    resolution: {integrity: sha512-agK7y8hO5Gz4Thu5kxTtLiZudNRflR1rTwmnWW5skxMd/+aqQ9XQene8HyyBsiajs5HV6ZQ/pCd3IKsqIfu4Kw==}
+  '@sinclair/typebox@0.33.12':
+    resolution: {integrity: sha512-d5KrXIdPolLp8VpGpZAQvEz8ioVtFlUQSyCIS2sEBi7FKhceIB7nj9BlNfqqvp5wmOfg8v8bP1rAvYYkjz21/Q==}
 
   '@sindresorhus/is@7.0.0':
     resolution: {integrity: sha512-WDTlVTyvFivSOuyvMeedzg2hdoBLZ3f1uNVuEida2Rl9BrfjrIRjWA/VZIrMRLvSwJYCAlCRA3usDt1THytxWQ==}
@@ -2490,9 +2490,9 @@ snapshots:
     dependencies:
       fast-json-stringify: 5.8.0
 
-  '@fastify/type-provider-typebox@4.1.0(@sinclair/typebox@0.33.9)':
+  '@fastify/type-provider-typebox@4.1.0(@sinclair/typebox@0.33.12)':
     dependencies:
-      '@sinclair/typebox': 0.33.9
+      '@sinclair/typebox': 0.33.12
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
@@ -2614,7 +2614,7 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@sinclair/typebox@0.33.9': {}
+  '@sinclair/typebox@0.33.12': {}
 
   '@sindresorhus/is@7.0.0': {}
 
