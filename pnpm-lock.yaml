@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@fastify/type-provider-typebox':
         specifier: 4.1.0
-        version: 4.1.0(@sinclair/typebox@0.33.12)
+        version: 4.1.0(@sinclair/typebox@0.33.16)
       '@sinclair/typebox':
-        specifier: 0.33.12
-        version: 0.33.12
+        specifier: 0.33.16
+        version: 0.33.16
       fastify:
         specifier: 4.28.1
         version: 4.28.1
@@ -606,8 +606,8 @@ packages:
   '@sec-ant/readable-stream@0.4.1':
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
 
-  '@sinclair/typebox@0.33.12':
-    resolution: {integrity: sha512-d5KrXIdPolLp8VpGpZAQvEz8ioVtFlUQSyCIS2sEBi7FKhceIB7nj9BlNfqqvp5wmOfg8v8bP1rAvYYkjz21/Q==}
+  '@sinclair/typebox@0.33.16':
+    resolution: {integrity: sha512-jsz4f3LxXGh217hJE3MAOB+i3pzgr9wLGUBiCRNWaG/rRcVoS4+dzQok9SeZLtwNdmY44oGYQWlJCjIJxeLKEw==}
 
   '@sindresorhus/is@7.0.0':
     resolution: {integrity: sha512-WDTlVTyvFivSOuyvMeedzg2hdoBLZ3f1uNVuEida2Rl9BrfjrIRjWA/VZIrMRLvSwJYCAlCRA3usDt1THytxWQ==}
@@ -1102,6 +1102,7 @@ packages:
   eslint@8.57.1:
     resolution: {integrity: sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -2490,9 +2491,9 @@ snapshots:
     dependencies:
       fast-json-stringify: 5.8.0
 
-  '@fastify/type-provider-typebox@4.1.0(@sinclair/typebox@0.33.12)':
+  '@fastify/type-provider-typebox@4.1.0(@sinclair/typebox@0.33.16)':
     dependencies:
-      '@sinclair/typebox': 0.33.12
+      '@sinclair/typebox': 0.33.16
 
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
@@ -2614,7 +2615,7 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@sinclair/typebox@0.33.12': {}
+  '@sinclair/typebox@0.33.16': {}
 
   '@sindresorhus/is@7.0.0': {}
 
