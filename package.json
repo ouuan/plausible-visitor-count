@@ -8,6 +8,7 @@
   "author": "Yufan You <ouuansteve@gmail.com> (https://github.com/ouuan)",
   "license": "Apache-2.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "lint": "eslint . --ignore-path .gitignore --ext .ts",
     "typecheck": "tsc --noEmit",
