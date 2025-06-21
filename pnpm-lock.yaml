@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@fastify/type-provider-typebox':
         specifier: 5.1.0
-        version: 5.1.0(@sinclair/typebox@0.34.33)
+        version: 5.1.0(@sinclair/typebox@0.34.35)
       '@sinclair/typebox':
-        specifier: 0.34.33
-        version: 0.34.33
+        specifier: 0.34.35
+        version: 0.34.35
       fastify:
         specifier: 5.3.3
         version: 5.3.3
@@ -441,8 +441,8 @@ packages:
   '@sec-ant/readable-stream@0.4.1':
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
 
-  '@sinclair/typebox@0.34.33':
-    resolution: {integrity: sha512-5HAV9exOMcXRUxo+9iYB5n09XxzCXnfy4VTNW4xnDv+FgjzAGY989C28BIdljKqmF+ZltUwujE3aossvcVtq6g==}
+  '@sinclair/typebox@0.34.35':
+    resolution: {integrity: sha512-C6ypdODf2VZkgRT6sFM8E1F8vR+HcffniX0Kp8MsU8PIfrlXbNCBz0jzj17GjdmjTx1OtZzdH8+iALL21UjF5A==}
 
   '@sindresorhus/is@7.0.2':
     resolution: {integrity: sha512-d9xRovfKNz1SKieM0qJdO+PQonjnnIfSNWfHYnBSJ9hkjm0ZPw6HlxscDXYstp3z+7V2GOFHc+J0CYrYTjqCJw==}
@@ -2272,9 +2272,9 @@ snapshots:
       '@fastify/forwarded': 3.0.0
       ipaddr.js: 2.2.0
 
-  '@fastify/type-provider-typebox@5.1.0(@sinclair/typebox@0.34.33)':
+  '@fastify/type-provider-typebox@5.1.0(@sinclair/typebox@0.34.35)':
     dependencies:
-      '@sinclair/typebox': 0.34.33
+      '@sinclair/typebox': 0.34.35
 
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
@@ -2418,7 +2418,7 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@sinclair/typebox@0.34.33': {}
+  '@sinclair/typebox@0.34.35': {}
 
   '@sindresorhus/is@7.0.2': {}
 
