@@ -12,7 +12,7 @@ jobs:
           version: latest
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 18.20.8
       - run: pnpm i
       - run: pnpm lint
       - run: pnpm typecheck
