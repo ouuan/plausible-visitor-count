@@ -28,7 +28,7 @@
   "dependencies": {
     "@fastify/type-provider-typebox": "5.2.0",
     "@sinclair/typebox": "0.34.48",
-    "fastify": "5.7.3",
+    "fastify": "5.7.4",
     "got": "14.6.6"
   }
 }
