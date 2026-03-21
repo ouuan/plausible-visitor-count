@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fastify/type-provider-typebox':
-        specifier: 5.2.0
-        version: 5.2.0(@sinclair/typebox@0.34.48)
+        specifier: 6.1.0
+        version: 6.1.0(typebox@1.1.6)
       '@sinclair/typebox':
         specifier: 0.34.48
         version: 0.34.48
@@ -251,10 +251,10 @@ packages:
   '@fastify/proxy-addr@5.1.0':
     resolution: {integrity: sha512-INS+6gh91cLUjB+PVHfu1UqcB76Sqtpyp7bnL+FYojhjygvOPA9ctiD/JDKsyD9Xgu4hUhCSJBPig/w7duNajw==}
 
-  '@fastify/type-provider-typebox@5.2.0':
-    resolution: {integrity: sha512-RoUFTQNYlaVM/gXosFqlrUAD/JHC+OXLcj4DxNoMOag2GI7OydfCt+3vdT+6D2daJwhGAdkpxB0wLNqS7gf4CQ==}
+  '@fastify/type-provider-typebox@6.1.0':
+    resolution: {integrity: sha512-k29cOitDRcZhMXVjtRq0+caKxdWoArz7su+dQWGzGWnFG+fSKhevgiZ7nexHWuXOEEQzgJlh6cptIMu69beaTA==}
     peerDependencies:
-      '@sinclair/typebox': '>=0.26 <=0.34'
+      typebox: ^1.0.13
 
   '@humanwhocodes/config-array@0.13.0':
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
@@ -2113,6 +2113,9 @@ packages:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
 
+  typebox@1.1.6:
+    resolution: {integrity: sha512-O2iWCF+RboQfDqr6n83eOq0dKCjVchMWklKgdwKFeR01MGTskILHYEFi9n3lQvfuua4CtvG/EJEIg3P8H9eBcw==}
+
   typed-array-buffer@1.0.3:
     resolution: {integrity: sha512-nAYYwfY3qnzX30IkA6AQZjVbtK6duGontcQm1WSG1MD94YLqK0515GNApXkoxKOWMusVssAHWLh9SeaoefYFGw==}
     engines: {node: '>= 0.4'}
@@ -2337,9 +2340,9 @@ snapshots:
       '@fastify/forwarded': 3.0.1
       ipaddr.js: 2.3.0
 
-  '@fastify/type-provider-typebox@5.2.0(@sinclair/typebox@0.34.48)':
+  '@fastify/type-provider-typebox@6.1.0(typebox@1.1.6)':
     dependencies:
-      '@sinclair/typebox': 0.34.48
+      typebox: 1.1.6
 
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
@@ -4366,6 +4369,8 @@ snapshots:
   type-fest@0.20.2: {}
 
   type-fest@4.41.0: {}
+
+  typebox@1.1.6: {}
 
   typed-array-buffer@1.0.3:
     dependencies:
