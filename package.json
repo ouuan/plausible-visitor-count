@@ -29,6 +29,6 @@
     "@fastify/type-provider-typebox": "6.1.0",
     "@sinclair/typebox": "0.34.49",
     "fastify": "5.8.5",
-    "got": "14.6.6"
+    "got": "15.0.5"
   }
 }
