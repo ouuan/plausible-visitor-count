@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fastify/type-provider-typebox':
-        specifier: 6.1.0
-        version: 6.1.0(typebox@1.3.27)
+        specifier: 6.3.0
+        version: 6.3.0(ajv-formats@3.0.1)(typebox@1.3.27)
       '@sinclair/typebox':
         specifier: 0.34.52
         version: 0.34.52
@@ -254,10 +254,11 @@ packages:
   '@fastify/proxy-addr@5.1.0':
     resolution: {integrity: sha512-INS+6gh91cLUjB+PVHfu1UqcB76Sqtpyp7bnL+FYojhjygvOPA9ctiD/JDKsyD9Xgu4hUhCSJBPig/w7duNajw==}
 
-  '@fastify/type-provider-typebox@6.1.0':
-    resolution: {integrity: sha512-k29cOitDRcZhMXVjtRq0+caKxdWoArz7su+dQWGzGWnFG+fSKhevgiZ7nexHWuXOEEQzgJlh6cptIMu69beaTA==}
+  '@fastify/type-provider-typebox@6.3.0':
+    resolution: {integrity: sha512-zsaoyyAdNvkuf2HOMJvf7vykRTFA/1M9J3HC0vHNtFhxNhwL36iDJl/2Tpl0XzMR0f0aATSeDV20ChH720wXYQ==}
     peerDependencies:
-      typebox: ^1.0.13
+      ajv-formats: ^3.0.1
+      typebox: ^1.1.14
 
   '@humanwhocodes/config-array@0.13.0':
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
@@ -2384,8 +2385,9 @@ snapshots:
       '@fastify/forwarded': 3.0.2
       ipaddr.js: 2.5.0
 
-  '@fastify/type-provider-typebox@6.1.0(typebox@1.3.27)':
+  '@fastify/type-provider-typebox@6.3.0(ajv-formats@3.0.1)(typebox@1.3.27)':
     dependencies:
+      ajv-formats: 3.0.1
       typebox: 1.3.27
 
   '@humanwhocodes/config-array@0.13.0(supports-color@7.2.0)':
